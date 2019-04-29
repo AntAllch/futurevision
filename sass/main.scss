@@ -1,10 +1,13 @@
+@import "reset/reset";
+
 @import "abstracts/colors";
 @import "abstracts/mixins";
+@import "abstracts/responsive";
 
-@import "layout/about.scss";
-@import "layout/copyright.scss";
-@import "layout/hero.scss";
-@import "layout/nav.scss";
-@import "layout/products.scss";
-@import "layout/test.scss";
-@import "layout/summary.scss";
+@import "layout/nav";
+@import "layout/hero";
+@import "layout/summary";
+@import "layout/products";
+@import "layout/about";
+@import "layout/test";
+@import "layout/copyright";

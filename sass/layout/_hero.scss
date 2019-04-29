@@ -1,0 +1,28 @@
+.hero{
+    display: none;
+    // background: $light-grey;
+    background: orange;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 140px 0;
+    font-family: "Book Antiqua";
+
+
+    .hero-logo{
+        width: 310px;
+    }
+
+    .hero-title{
+        font-weight: bold;
+        font-size: 3em;
+        padding: 120px 0;
+    }
+
+    .hero-quote{
+        // background: lightblue;
+        font-size: 2em;
+        width: 400px;
+        margin: 0 auto;        
+    }
+}
