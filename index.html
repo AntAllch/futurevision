@@ -13,9 +13,9 @@
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="">Products</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="#summary">Products</a></li>
+                <li><a href="#test">Test</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
@@ -25,9 +25,9 @@
         <div class="mobile-nav-menu">            
             <p class="close-menu">X</p>
             <ul class="mobile-nav-links">
-                <li><a href="">Products</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#test">Test</a></li>
+                <li><a href="#about"">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>            
         </div>
@@ -44,25 +44,33 @@
 
 
     <!--SUMMARY SECTION-->
-    <section class="summary">
+    <section class="summary" id="summary">
 
-        <div class="laser">
-            <img class="beam" src="img/laseroutline.png" alt="Laser Beam">
-            <p class="sum-title"></p>
-            <p class="sum-desc"></p>
-        </div>
+        <div class="summary-group">
 
-        <div class="aqua">
-            <img class="drop" src="img/aquadrop.png" alt="Aqua Drop">
-            <p class="sum-title"></p>
-            <p class="sum-desc"></p>
-        </div>
+            <div class="laser">
+                <img class="beam" src="img/laseroutline.png" alt="Laser Beam">
+                <p class="sum-title">Laser</p>
+                <p class="sum-desc"><em>Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed
+                                    eiusmod tempor incididunt ut</em>
+            </div>
+        
+            <div class="aqua">
+                <img class="aquadrop" src="img/aquadrop.png" alt="Aqua Drop">
+                <p class="sum-title">Aqua</p>
+                <p class="sum-desc"><em>Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed
+                        eiusmod tempor incididunt ut</em>
+            </div>
+    
+            <div class="specs">
+                <img class="frames" src="img/glasses.png" alt="Glasses Frame">
+                <p class="sum-title">Glasses</p>
+                <p class="sum-desc"><em>Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed
+                        eiusmod tempor incididunt ut</em>
+            </div>
 
-        <div class="specs">
-            <img class="frames" src="img/glasses.png" alt="Glasses Frame">
-            <p class="sum-title"></p>
-            <p class="sum-desc"></p>
         </div>
+        
 
         <button class="btn-moreinfo">More Info</button>
 
@@ -70,10 +78,10 @@
 
 
     <!--PRODUCTS SECTION-->
-    <section class="products">
+    <section class="products" id="products">
 
         <div class="glasses">
-            <div class="product-img"></div>
+            <div class="glasses-img"></div>
             <div class="glasses-info">
                 <p class="product-title">Glasses</p>
                 <p class="product-desc">Browse a wide range of glasses and frames, to 
@@ -83,21 +91,21 @@
             </div>
         </div>
 
-        <div class="aqua-treatment">            
+        <div class="aqua-treatment">     
+            
+                <div class="aquatreatment-img"></div>
             <div class="aquatreatment-info">
                 <p class="product-title">Aqua Treatment</p>
                 <p class="product-desc">A cool drop of advanced liquid makes subtle adjustments to the shape of the surface 
                                         of your eye (the cornea), correcting its tiny imperfections and making your vision 
-                                        clearer and sharper.The vast majority of our patients are amazed at how quickly
-                                        they recover and the speed at which they can enjoy a life free from glasses
-                                        and contact lenses.</p>
+                                        clearer and sharper.</p>
                 <button class="btn-appointment">Make an appointment</button>
             </div>
-            <div class="aquatreatment-img"></div>
+            
         </div>
 
         <div class="laser-eye">
-            <div class="product-img"></div>
+            <div class="lasereye-img"></div>
             <div class="lasereye-info">
                 <p class="product-title">Laser Eye Surgery</p>
                 <p class="product-desc">It's a simple procedure that takes anything from a matter of seconds to
@@ -112,7 +120,7 @@
     
 
     <!--ABOUT SECTION-->
-    <section class="about">
+    <section class="about" id="about">
         <img class="about-logo" src="img/logowhite.png" alt="FUTURE VISION LOGO">
         <div class="about-info">
             <p class="about-info">The History of Future Vision</p>
@@ -133,7 +141,7 @@
 
 
     <!--TEST SECTION-->
-    <section class="test">
+    <section class="test" id="test">
         <p class="test-title">free <span>eye test</span></p>
         <p class="test-warning">Your eyes are quite important so make sure you look after them!</p>
         <p class="first-test">Get your first eye test free</p>

@@ -1,3 +1,85 @@
 .summary{
-    display: none;
+
+    // display: none;
+    font-family: "Century Gothic";    
+    margin-bottom: 90px;
+    text-align: center;
+
+    @include respond(mobile){
+        display: none;
+    }
+
+    .summary-group{
+        // background: pink;
+        display: flex;
+        justify-content: space-around;
+        // text-align: center;
+        width: 1200px;
+        margin: 40px auto;
+
+        @include respond(smalldesktop){
+            width: 800px;
+        }
+
+        @include respond(tablet){
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .laser{
+
+            .beam{
+                width: 50px;
+            }            
+        }
+
+        .aqua{     
+
+            .aquadrop{
+                width: 48px;
+            }
+        }
+
+        .specs{
+            margin-top: 25px;
+
+            .frames{
+                width: 80px;
+            }
+        }
+    
+        .sum-title{
+            font-weight: bold;
+            font-size: 2.5em;
+        }
+    
+        .sum-desc{
+            font-size: 1.5em;
+        }
+    
+        .laser,
+        .aqua,
+        .specs{
+            width: 300px;
+
+            @include respond(smalldesktop){
+                width: 400px;
+            }
+
+            @include respond(tablet){
+                margin: 40px 0 40px 0;
+            }
+        }
+    }   
+
+    .btn-moreinfo{
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        border: 3px solid $dark-grey;
+        color: $accent;
+        font-size: 2em;
+        background: $white;
+    }
 }

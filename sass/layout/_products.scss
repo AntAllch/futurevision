@@ -1,3 +1,201 @@
 .products{
-    display: none;
+    // display: none;
+    font-family: "Century Gothic";
+
+    //GLASSES SECTION
+    .glasses{
+
+        display: flex;
+        // background: pink;
+        background: $light-grey;
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        @include respond(tablet){
+            flex-direction:column;
+            height: 450px;
+        }
+
+        .glasses-img{
+            @include imagejpg(glasses1);
+            width: 400px;
+            // height: 400px;
+            width: 60%;
+            clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+
+            @include respond(tablet){
+                clip-path: none;
+                height: 250px;
+                // grid-area: image;
+                width: 100%;
+            }
+        }
+
+        .glasses-info{
+            width: 40%;
+            text-align: right;
+            margin: 140px 40px 0px 0px;
+
+            @include respond(tablet){
+                // grid-area: info;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 35px;
+            }
+        }        
+    }
+    
+
+
+    //AQUA TREATMENT SECTION
+    .aqua-treatment{
+
+        display: flex;
+        // background: pink;
+        background: $light-grey;
+
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        @include respond(tablet){
+            flex-direction:column;
+            height: 540px;
+        }
+
+        @include respond(tablet){
+            height: 510px;
+        }
+
+        .aquatreatment-img{
+            @include imagejpg(aqua1);
+            width: 400px;
+            width: 60%;
+            clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+
+            @include respond(tablet){
+                clip-path: none;
+                height: 250px;
+                width: 100%;
+            }
+        }
+
+        .aquatreatment-info{
+            width: 40%;
+            text-align: right;
+            margin: 120px 40px 0px 0px;
+
+            // @include respond(smalldesktop){
+            //     margin-top: 90px;
+            // }
+
+            @include respond(tablet){
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+            }
+
+            @include respond(mobile){
+                margin-top: 20px;
+            }
+        }        
+    }
+
+
+
+    //LASER EYE SURGERY
+    .laser-eye{
+
+        display: flex;
+        // background: pink;
+        background: $light-grey;
+
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        @include respond(tablet){
+            flex-direction:column;
+            height: 540px;
+        }
+
+        .lasereye-img{
+            @include imagejpg(lasereye);
+            width: 400px;
+            width: 60%;
+            clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+
+            @include respond(tablet){
+                clip-path: none;
+                height: 250px;
+                width: 100%;
+            }
+        }
+
+        .lasereye-info{
+            width: 40%;
+            text-align: right;
+            margin: 120px 40px 0px 0px;
+
+            @include respond(smalldesktop){
+                margin-top: 90px;
+            }
+
+            @include respond(tablet){
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+            }
+
+            @include respond(tablet){
+                margin-top: 20px;
+            }
+        }        
+    }
+    
+
+    .product-title{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2.8em;
+        margin-bottom: 10px;
+    }
+
+    .product-desc{
+        font-size: 2.1em;
+        margin-bottom: 30px;
+
+        @include respond(tablet){
+            font-size: 1.8em;
+            width: 450px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        @include respond(mobile){
+            font-size: 1.5em;
+            width: 300px;
+        }
+    }
+
+    .btn-appointment{
+        width: 250px;
+        height: 50px;
+        border-radius: 50px;
+        border: 3px solid $dark-grey;
+        color: $accent;
+        font-size: 2em;
+        background: $white;
+
+        @include respond(mobile){
+            width:200px;
+            height: 40px;
+            font-size: 1.5em;
+        }
+    }
 }

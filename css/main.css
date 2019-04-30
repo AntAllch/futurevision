@@ -82,13 +82,10 @@ header {
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.4);
     width: 250px;
     position: absolute;
+    display: none;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in; }
-    header .mobile-nav-menu .menu-active {
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-      transform: translateX(0); }
     header .mobile-nav-menu .close-menu {
       font-size: 3em;
       padding: 15px 0 30px 208px; }
@@ -102,6 +99,8 @@ header {
         header .mobile-nav-menu .mobile-nav-links li a {
           text-decoration: none;
           color: #000000; }
+          header .mobile-nav-menu .mobile-nav-links li a:visited {
+            text-decoration: none; }
 
 .hero {
   background: #FBFBFB;
@@ -138,10 +137,232 @@ header {
         display: none; } }
 
 .summary {
-  display: none; }
+  font-family: "Century Gothic";
+  margin-bottom: 90px;
+  text-align: center; }
+  @media screen and (max-width: 525px) {
+    .summary {
+      display: none; } }
+  .summary .summary-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 40px auto; }
+    @media screen and (max-width: 1210px) {
+      .summary .summary-group {
+        width: 800px; } }
+    @media screen and (max-width: 800px) {
+      .summary .summary-group {
+        width: 400px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    .summary .summary-group .laser .beam {
+      width: 50px; }
+    .summary .summary-group .aqua .aquadrop {
+      width: 48px; }
+    .summary .summary-group .specs {
+      margin-top: 25px; }
+      .summary .summary-group .specs .frames {
+        width: 80px; }
+    .summary .summary-group .sum-title {
+      font-weight: bold;
+      font-size: 2.5em; }
+    .summary .summary-group .sum-desc {
+      font-size: 1.5em; }
+    .summary .summary-group .laser,
+    .summary .summary-group .aqua,
+    .summary .summary-group .specs {
+      width: 300px; }
+      @media screen and (max-width: 1210px) {
+        .summary .summary-group .laser,
+        .summary .summary-group .aqua,
+        .summary .summary-group .specs {
+          width: 400px; } }
+      @media screen and (max-width: 800px) {
+        .summary .summary-group .laser,
+        .summary .summary-group .aqua,
+        .summary .summary-group .specs {
+          margin: 40px 0 40px 0; } }
+  .summary .btn-moreinfo {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #777777;
+    color: #00AAC5;
+    font-size: 2em;
+    background: #ffffff; }
 
 .products {
-  display: none; }
+  font-family: "Century Gothic"; }
+  .products .glasses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #FBFBFB;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 800px) {
+      .products .glasses {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 450px; } }
+    .products .glasses .glasses-img {
+      background-image: url("../img/glasses1.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 400px;
+      width: 60%;
+      -webkit-clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%); }
+      @media screen and (max-width: 800px) {
+        .products .glasses .glasses-img {
+          -webkit-clip-path: none;
+          clip-path: none;
+          height: 250px;
+          width: 100%; } }
+    .products .glasses .glasses-info {
+      width: 40%;
+      text-align: right;
+      margin: 140px 40px 0px 0px; }
+      @media screen and (max-width: 800px) {
+        .products .glasses .glasses-info {
+          width: 100%;
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 35px; } }
+  .products .aqua-treatment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #FBFBFB;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 800px) {
+      .products .aqua-treatment {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 540px; } }
+    @media screen and (max-width: 800px) {
+      .products .aqua-treatment {
+        height: 510px; } }
+    .products .aqua-treatment .aquatreatment-img {
+      background-image: url("../img/aqua1.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 400px;
+      width: 60%;
+      -webkit-clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%); }
+      @media screen and (max-width: 800px) {
+        .products .aqua-treatment .aquatreatment-img {
+          -webkit-clip-path: none;
+          clip-path: none;
+          height: 250px;
+          width: 100%; } }
+    .products .aqua-treatment .aquatreatment-info {
+      width: 40%;
+      text-align: right;
+      margin: 120px 40px 0px 0px; }
+      @media screen and (max-width: 800px) {
+        .products .aqua-treatment .aquatreatment-info {
+          width: 100%;
+          text-align: center;
+          margin-top: 25px; } }
+      @media screen and (max-width: 525px) {
+        .products .aqua-treatment .aquatreatment-info {
+          margin-top: 20px; } }
+  .products .laser-eye {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #FBFBFB;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 800px) {
+      .products .laser-eye {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 540px; } }
+    .products .laser-eye .lasereye-img {
+      background-image: url("../img/lasereye.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 400px;
+      width: 60%;
+      -webkit-clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%); }
+      @media screen and (max-width: 800px) {
+        .products .laser-eye .lasereye-img {
+          -webkit-clip-path: none;
+          clip-path: none;
+          height: 250px;
+          width: 100%; } }
+    .products .laser-eye .lasereye-info {
+      width: 40%;
+      text-align: right;
+      margin: 120px 40px 0px 0px; }
+      @media screen and (max-width: 1210px) {
+        .products .laser-eye .lasereye-info {
+          margin-top: 90px; } }
+      @media screen and (max-width: 800px) {
+        .products .laser-eye .lasereye-info {
+          width: 100%;
+          text-align: center;
+          margin-top: 25px; } }
+      @media screen and (max-width: 800px) {
+        .products .laser-eye .lasereye-info {
+          margin-top: 20px; } }
+  .products .product-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.8em;
+    margin-bottom: 10px; }
+  .products .product-desc {
+    font-size: 2.1em;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 800px) {
+      .products .product-desc {
+        font-size: 1.8em;
+        width: 450px;
+        margin: 0 auto;
+        margin-bottom: 20px; } }
+    @media screen and (max-width: 525px) {
+      .products .product-desc {
+        font-size: 1.5em;
+        width: 300px; } }
+  .products .btn-appointment {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #777777;
+    color: #00AAC5;
+    font-size: 2em;
+    background: #ffffff; }
+    @media screen and (max-width: 525px) {
+      .products .btn-appointment {
+        width: 200px;
+        height: 40px;
+        font-size: 1.5em; } }
 
 .about {
   display: none; }

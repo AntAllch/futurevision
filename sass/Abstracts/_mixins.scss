@@ -1,0 +1,7 @@
+@mixin imagejpg($bg){
+    background: {
+        image: url("../img/#{$bg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
