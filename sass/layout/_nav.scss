@@ -1,14 +1,15 @@
 header{
 
     font-family: "Book Antiqua";
+    overflow-x: hidden;
 
     nav{
 
-        background: pink;
+        // background: pink;
 
         .nav-links{
             font-size: 1.9em;
-            background: yellow;
+            // background: yellow;
             margin: 0 auto;
             display: flex;
             justify-content: center;
@@ -48,6 +49,76 @@ header{
 
             }           
             
+        }
+    }
+
+    .hamburger{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        width: 45px;
+        height: 3px;
+        background: $black;
+        display: none;
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 3px;
+            background: $black;
+        }
+
+        &::before{
+            top: 10px;
+        }
+
+        &::after{
+            top: -10px;
+        }
+
+        @include respond(mobile){
+            display: block;
+        }
+    }
+
+    .mobile-nav-menu{
+        
+        background: $medium-grey;
+        box-shadow: 1px 0px 10px rgba(0,0,0,0.4);
+        width: 250px;
+        position: absolute;
+        // display: none;
+        // transform: translateX(-250px);
+        transition: all 0.3s ease-in;
+        // opacity: 0;
+        
+        .menu-active{
+            transform: translateX(0);
+        }
+        
+
+        .close-menu{
+            font-size: 3em;
+            padding: 15px 0 30px 208px;            
+        }
+
+        .mobile-nav-links{
+            // font-size: 2em;
+            height: 100vh;
+
+            li{
+                font-size: 1.8em;
+                padding: 65px 30px;
+                list-style: none;
+                text-transform: uppercase;
+
+                a{
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
         }
     }
 }

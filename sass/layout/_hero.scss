@@ -1,28 +1,50 @@
 .hero{
-    display: none;
-    // background: $light-grey;
-    background: orange;
+    // display: none;
+    background: $light-grey;
+    // background: orange;
     width: 95%;
     margin: 0 auto;
     text-align: center;
     padding: 140px 0;
     font-family: "Book Antiqua";
 
+    @include respond(mobile){
+        height: 100vh;
+        background: $white;
+    }
+
 
     .hero-logo{
         width: 310px;
+
+        @include respond(mobile){
+            margin-top: 200px;
+        }
     }
 
     .hero-title{
         font-weight: bold;
         font-size: 3em;
         padding: 120px 0;
+
+        @include respond(tablet){
+            font-size: 2.5em;
+        }
+
+        @include respond(mobile){
+            display: none;
+        }
     }
 
     .hero-quote{
         // background: lightblue;
         font-size: 2em;
         width: 400px;
-        margin: 0 auto;        
+        margin: 0 auto; 
+        
+        @include respond(mobile){
+            display: none;
+        }
+        
     }
 }
