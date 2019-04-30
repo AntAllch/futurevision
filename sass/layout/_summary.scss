@@ -2,7 +2,7 @@
 
     // display: none;
     font-family: "Century Gothic";    
-    margin-bottom: 90px;
+    margin-bottom: 80px;
     text-align: center;
 
     @include respond(mobile){
@@ -15,7 +15,7 @@
         justify-content: space-around;
         // text-align: center;
         width: 1200px;
-        margin: 40px auto;
+        margin: 60px auto;
 
         @include respond(smalldesktop){
             width: 800px;

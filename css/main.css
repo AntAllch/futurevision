@@ -138,7 +138,7 @@ header {
 
 .summary {
   font-family: "Century Gothic";
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   text-align: center; }
   @media screen and (max-width: 525px) {
     .summary {
@@ -150,7 +150,7 @@ header {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     width: 1200px;
-    margin: 40px auto; }
+    margin: 60px auto; }
     @media screen and (max-width: 1210px) {
       .summary .summary-group {
         width: 800px; } }
@@ -207,7 +207,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     background: #FBFBFB;
-    width: 90%;
+    width: 95%;
     height: 500px;
     margin: 0 auto;
     margin-bottom: 60px; }
@@ -247,7 +247,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     background: #FBFBFB;
-    width: 90%;
+    width: 95%;
     height: 500px;
     margin: 0 auto;
     margin-bottom: 60px; }
@@ -292,7 +292,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     background: #FBFBFB;
-    width: 90%;
+    width: 95%;
     height: 500px;
     margin: 0 auto;
     margin-bottom: 60px; }
@@ -365,7 +365,81 @@ header {
         font-size: 1.5em; } }
 
 .about {
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  height: 500px;
+  margin-bottom: 60px;
+  font-family: "Century Gothic"; }
+  @media screen and (max-width: 800px) {
+    .about {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "logo" "info"; } }
+  .about .about-logo {
+    background: #FBFBFB;
+    width: 50%;
+    position: relative; }
+    @media screen and (max-width: 800px) {
+      .about .about-logo {
+        grid-area: logo;
+        width: 100%;
+        height: 250px; } }
+    .about .about-logo .about-whitelogo {
+      width: 450px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      @media screen and (max-width: 1210px) {
+        .about .about-logo .about-whitelogo {
+          width: 350px; } }
+      @media screen and (max-width: 525px) {
+        .about .about-logo .about-whitelogo {
+          width: 300px; } }
+  .about .about-info {
+    background: #EFEFEF;
+    width: 50%;
+    text-align: center; }
+    @media screen and (max-width: 800px) {
+      .about .about-info {
+        grid-area: info;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 60px; } }
+    @media screen and (max-width: 800px) {
+    .about .about-logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+    .about .about-info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; } }
+    .about .about-info .about-history {
+      width: 350px;
+      margin: 0 auto;
+      margin-top: 100px; }
+      @media screen and (max-width: 800px) {
+        .about .about-info .about-history {
+          margin-top: 50px; } }
+      @media screen and (max-width: 525px) {
+        .about .about-info .about-history {
+          width: 300px;
+          margin-top: 40px; } }
+      .about .about-info .about-history .about-title {
+        font-weight: bold;
+        font-size: 2.2em;
+        font-style: italic;
+        margin-bottom: 20px; }
+      .about .about-info .about-history .about-desc {
+        font-size: 1.6em; }
 
 .test {
   display: none; }
