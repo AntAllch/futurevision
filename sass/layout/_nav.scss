@@ -28,7 +28,8 @@ header{
 
                 a{
                     text-decoration: none;    
-                    position: relative;   
+                    position: relative;  
+                    color: $black; 
                     
                     &:before{
                         content: "";

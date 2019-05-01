@@ -36,7 +36,8 @@ header {
       padding: 15px 40px; }
       header nav .nav-links li a {
         text-decoration: none;
-        position: relative; }
+        position: relative;
+        color: #000000; }
         header nav .nav-links li a:before {
           content: "";
           position: absolute;
