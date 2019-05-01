@@ -1,3 +1,95 @@
 .test{
-    display: none;
+    // display: none;
+    // background: pink;
+    background: $light-grey;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-family: "Century Gothic";
+    width: 95%;
+    text-align: center;
+
+    @include respond(tablet){
+        margin-top: 215px;
+    }
+
+    @include respond(mobile){
+        padding-top: 60px;
+    }
+
+    .test-title{
+        text-transform: uppercase;
+        font-size: 20em;
+
+        span{
+            display: block;
+            font-size: 11rem;
+            line-height: 10px;
+            margin-bottom: 100px;
+
+            @include respond(tablet){
+                font-size: 8.1rem;
+            }
+
+            @include respond(mobile){
+                font-size: 5.5rem;
+            }
+        }
+
+        @include respond(tablet){
+            font-size: 15em;
+        }
+
+        @include respond(mobile){
+            font-size: 10em;
+        }
+    }
+
+    .test-warning{
+        margin-bottom: 40px;
+        font-size: 3em;
+        width: 500px;
+        margin: 0 auto;
+
+        @include respond(tablet){
+            font-size: 2em;
+            width: 400px;
+        }
+
+        @include respond(mobile){
+            font-size: 1.5em;
+            width: 300px;
+        }
+    }
+
+    .first-test{
+        font-size: 2em;
+        margin: 50px 0 10px 0;
+
+        @include respond(tablet){
+            font-size: 1.5em;
+        }
+    }
+
+    .btn-appointment{
+        width: 250px;
+        height: 50px;
+        border-radius: 50px;
+        border: 3px solid $dark-grey;
+        color: $accent;
+        font-size: 2em;
+        background: $white;
+        margin-bottom: 80px;
+
+        @include respond(tablet){
+            width:180px;
+            height: 40px;
+            font-size: 1.5em;
+        }
+
+        @include respond(mobile){
+            width:200px;
+            height: 40px;
+            font-size: 1.5em;
+        } 
+    }
 }

@@ -63,8 +63,12 @@
         margin-bottom: 60px;
 
         @include respond(tablet){
-            flex-direction:column;
-            height: 540px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "aquaimage"
+                                 "info";
+            // height: 540px;
         }
 
         @include respond(tablet){
@@ -75,9 +79,10 @@
             @include imagejpg(aqua1);
             width: 400px;
             width: 60%;
-            clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
 
             @include respond(tablet){
+                grid-area: aquaimage;
                 clip-path: none;
                 height: 250px;
                 width: 100%;
@@ -94,9 +99,10 @@
             // }
 
             @include respond(tablet){
+                grid-area: info;
                 width: 100%;
                 text-align: center;
-                margin-top: 25px;
+                margin-top: 20px;
             }
 
             @include respond(mobile){

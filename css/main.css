@@ -253,11 +253,13 @@ header {
     margin-bottom: 60px; }
     @media screen and (max-width: 800px) {
       .products .aqua-treatment {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        height: 540px; } }
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "aquaimage" "info"; } }
     @media screen and (max-width: 800px) {
       .products .aqua-treatment {
         height: 510px; } }
@@ -267,10 +269,11 @@ header {
       background-position: center;
       width: 400px;
       width: 60%;
-      -webkit-clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%); }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%); }
       @media screen and (max-width: 800px) {
         .products .aqua-treatment .aquatreatment-img {
+          grid-area: aquaimage;
           -webkit-clip-path: none;
           clip-path: none;
           height: 250px;
@@ -281,9 +284,10 @@ header {
       margin: 120px 40px 0px 0px; }
       @media screen and (max-width: 800px) {
         .products .aqua-treatment .aquatreatment-info {
+          grid-area: info;
           width: 100%;
           text-align: center;
-          margin-top: 25px; } }
+          margin-top: 20px; } }
       @media screen and (max-width: 525px) {
         .products .aqua-treatment .aquatreatment-info {
           margin-top: 20px; } }
@@ -381,7 +385,10 @@ header {
       grid-template-columns: 1fr;
       -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "logo" "info"; } }
+      grid-template-areas: "logo" "info"; }
+    .about > .aquatreatment-info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; } }
   .about .about-logo {
     background: #FBFBFB;
     width: 50%;
@@ -416,10 +423,19 @@ header {
         height: 400px;
         margin-bottom: 60px; } }
     @media screen and (max-width: 800px) {
+      .products .aqua-treatment .aquatreatment-img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+      .products .aqua-treatment .aquatreatment-info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
     .about .about-logo {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
-    .about .about-info {
+      .about .about-info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+    .about > .about-info {
     -ms-grid-row: 2;
     -ms-grid-column: 1; } }
     .about .about-info .about-history {
@@ -442,7 +458,93 @@ header {
         font-size: 1.6em; }
 
 .test {
-  display: none; }
+  background: #FBFBFB;
+  margin: 0 auto;
+  padding-top: 80px;
+  font-family: "Century Gothic";
+  width: 95%;
+  text-align: center; }
+  @media screen and (max-width: 800px) {
+    .test {
+      margin-top: 215px; } }
+  @media screen and (max-width: 525px) {
+    .test {
+      padding-top: 60px; } }
+  .test .test-title {
+    text-transform: uppercase;
+    font-size: 20em; }
+    .test .test-title span {
+      display: block;
+      font-size: 11rem;
+      line-height: 10px;
+      margin-bottom: 100px; }
+      @media screen and (max-width: 800px) {
+        .test .test-title span {
+          font-size: 8.1rem; } }
+      @media screen and (max-width: 525px) {
+        .test .test-title span {
+          font-size: 5.5rem; } }
+    @media screen and (max-width: 800px) {
+      .test .test-title {
+        font-size: 15em; } }
+    @media screen and (max-width: 525px) {
+      .test .test-title {
+        font-size: 10em; } }
+  .test .test-warning {
+    margin-bottom: 40px;
+    font-size: 3em;
+    width: 500px;
+    margin: 0 auto; }
+    @media screen and (max-width: 800px) {
+      .test .test-warning {
+        font-size: 2em;
+        width: 400px; } }
+    @media screen and (max-width: 525px) {
+      .test .test-warning {
+        font-size: 1.5em;
+        width: 300px; } }
+  .test .first-test {
+    font-size: 2em;
+    margin: 50px 0 10px 0; }
+    @media screen and (max-width: 800px) {
+      .test .first-test {
+        font-size: 1.5em; } }
+  .test .btn-appointment {
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #777777;
+    color: #00AAC5;
+    font-size: 2em;
+    background: #ffffff;
+    margin-bottom: 80px; }
+    @media screen and (max-width: 800px) {
+      .test .btn-appointment {
+        width: 180px;
+        height: 40px;
+        font-size: 1.5em; } }
+    @media screen and (max-width: 525px) {
+      .test .btn-appointment {
+        width: 200px;
+        height: 40px;
+        font-size: 1.5em; } }
 
 .copyright {
-  display: none; }
+  font-family: "Century Gothic";
+  width: 95%;
+  margin: 0 auto;
+  background: #EFEFEF;
+  margin-top: 40px;
+  text-align: center; }
+  @media screen and (max-width: 525px) {
+    .copyright {
+      margin-top: 50px; } }
+  .copyright .copyright-text {
+    font-size: 2em;
+    padding: 10px 0 10px 0; }
+    @media screen and (max-width: 800px) {
+      .copyright .copyright-text {
+        font-size: 1.3em; } }
+    @media screen and (max-width: 525px) {
+      .copyright .copyright-text {
+        font-size: 1.1em; } }

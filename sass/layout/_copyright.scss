@@ -1,3 +1,26 @@
 .copyright{
-    display: none;
+    // display: none;
+    font-family: "Century Gothic";
+    width: 95%;
+    margin: 0 auto;
+    background: $medium-grey;
+    margin-top: 40px;
+    text-align: center;
+
+    @include respond(mobile){
+        margin-top: 50px;
+    }
+
+    .copyright-text{
+        font-size: 2em;
+        padding: 10px 0 10px 0;
+
+        @include respond(tablet){
+            font-size: 1.3em;
+        }
+
+        @include respond(mobile){
+            font-size: 1.1em;
+        }
+    }
 }
