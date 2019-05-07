@@ -14,10 +14,12 @@ header{
             display: flex;
             justify-content: center;
 
+            //Change layout when it hits tablet size
             @include respond(tablet){
                 font-size: 1.5em;
             }
 
+            //Change layout when it hits mobile size
             @include respond(mobile){
                 display: none;
             }
@@ -30,7 +32,8 @@ header{
                     text-decoration: none;    
                     position: relative;  
                     color: $black; 
-                    
+
+                    //The black lines that appear when you hover
                     &:before{
                         content: "";
                         position: absolute;                        
@@ -42,6 +45,7 @@ header{
                         transition: all 0.2s ease-in-out 0s;
                     }
 
+                    //Activating the black lines on hover                    
                     &:hover:before{
                         visibility: visible;
                         transform: scaleX(1);
@@ -53,6 +57,7 @@ header{
         }
     }
 
+    //The 3 lines that appear during mobile size
     .hamburger{
         position: absolute;
         top: 25px;
@@ -79,6 +84,7 @@ header{
             top: -10px;
         }
 
+        //Change layout when it hits mobile size
         @include respond(mobile){
             display: block;
         }
@@ -95,12 +101,13 @@ header{
         z-index: 100;
         transition: all 0.3s ease-in;
         
-
+        //The "X" that closes the mobile nav menu
         .close-menu{
             font-size: 3em;
             padding: 15px 0 30px 150px;            
         }
 
+        //The nav links on the mobile nav
         .mobile-nav-links{
             // font-size: 2em;
             height: 100vh;

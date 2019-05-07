@@ -197,6 +197,7 @@
         color: $accent;
         font-size: 2em;
         background: $white;
+        cursor: pointer;
 
         @include respond(mobile){
             width:200px;

@@ -79,6 +79,7 @@
         font-size: 2em;
         background: $white;
         margin-bottom: 80px;
+        cursor: pointer;
 
         @include respond(tablet){
             width:180px;
