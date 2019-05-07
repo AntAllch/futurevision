@@ -88,27 +88,22 @@ header{
         
         background: $medium-grey;
         box-shadow: 1px 0px 10px rgba(0,0,0,0.4);
-        width: 250px;
-        position: absolute;
+        width: 200px;
+        position: fixed;
         display: none;
         // transform: translateX(-250px);
+        z-index: 100;
         transition: all 0.3s ease-in;
-        // opacity: 0;
-        
-        // .menu-active{
-        //     transform: translateX(0);
-        // }
         
 
         .close-menu{
             font-size: 3em;
-            padding: 15px 0 30px 208px;            
+            padding: 15px 0 30px 150px;            
         }
 
         .mobile-nav-links{
             // font-size: 2em;
             height: 100vh;
-
             li{
                 font-size: 1.8em;
                 padding: 65px 30px;

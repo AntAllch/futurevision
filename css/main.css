@@ -81,15 +81,16 @@ header {
     background: #EFEFEF;
     -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.4);
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.4);
-    width: 250px;
-    position: absolute;
+    width: 200px;
+    position: fixed;
     display: none;
+    z-index: 100;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in; }
     header .mobile-nav-menu .close-menu {
       font-size: 3em;
-      padding: 15px 0 30px 208px; }
+      padding: 15px 0 30px 150px; }
     header .mobile-nav-menu .mobile-nav-links {
       height: 100vh; }
       header .mobile-nav-menu .mobile-nav-links li {
@@ -549,3 +550,120 @@ header {
     @media screen and (max-width: 525px) {
       .copyright .copyright-text {
         font-size: 1.1em; } }
+
+.contact {
+  font-family: "Century Gothic";
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s;
+  -o-transition: visibility 0s, opacity 0.5s;
+  transition: visibility 0s, opacity 0.5s; }
+  .contact .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    height: 780px;
+    background: #ffffff;
+    border-radius: 5px; }
+    @media screen and (max-width: 800px) {
+      .contact .form {
+        width: 600px; } }
+    @media screen and (max-width: 525px) {
+      .contact .form {
+        width: 350px; } }
+    .contact .form .contact-title {
+      font-size: 2em;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      color: #777777; }
+    .contact .form .contact-close {
+      position: absolute;
+      cursor: pointer;
+      font-size: 3em;
+      color: #777777;
+      top: 30px;
+      right: 30px; }
+    .contact .form .number-title {
+      margin: 20px 0px 5px 0;
+      font-size: 2.5em;
+      color: #777777; }
+    .contact .form .phone-number {
+      font-size: 2.2em;
+      color: #777777; }
+    .contact .form form {
+      -webkit-transition: all 4s ease-in-out;
+      -o-transition: all 4s ease-in-out;
+      transition: all 4s ease-in-out;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .contact .form form input {
+        height: 40px; }
+      .contact .form form label {
+        font-size: 2em;
+        color: #777777;
+        margin-bottom: 10px; }
+      .contact .form form .form-control {
+        width: 600px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        font-size: 18px;
+        padding-left: 20px;
+        margin-bottom: 16px; }
+        @media screen and (max-width: 800px) {
+          .contact .form form .form-control {
+            width: 500px; } }
+        @media screen and (max-width: 525px) {
+          .contact .form form .form-control {
+            width: 300px; } }
+      .contact .form form textarea {
+        padding-top: 20px; }
+      .contact .form form .submit {
+        background: #00AAC5;
+        color: #ffffff;
+        border-color: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        margin-top: 20px; }
+        .contact .form form .submit:hover {
+          -webkit-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+          background-color: #008599;
+          color: #ffffff;
+          cursor: pointer; }
