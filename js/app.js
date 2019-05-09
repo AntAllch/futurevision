@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
 
     $(".mobile-nav-links li").click(function(){
-        $(".mobile-nav-menu").css("transform", "translateY(-600px)");
+        $(".mobile-nav-menu").css("top", "-600px");
     }); 
 
 
@@ -19,11 +19,11 @@ $(document).ready(function(){
 
     //Contact form
     $(".contact-activation").click(function(){
-        $(".contact").css({"visibility": "visible", "opacity": "1"});
+        $(".contact").css("display", "flex");
     });
 
     $(".contact-close").click(function(){
-        $(".contact").css({"visibility": "hidden", "opacity": "0", "transition": "none"});
+        $(".contact").css("display", "none");
     });
 
 
