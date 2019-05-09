@@ -96,6 +96,7 @@ header {
     -ms-flex-align: center;
     align-items: center;
     position: fixed;
+    opacity: 0;
     -webkit-transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
     -o-transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
     transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);

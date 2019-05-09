@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
     $(".hamburger").click(function(){
-        $(".mobile-nav-menu").css("transform", "translateY(10px)");
-        $(".mobile-nav-menu").css("transform", "translateY(0px)");
+        $(".mobile-nav-menu").css({"transform": "translateY(0px)", "opacity": "1"});
         $(".mobile-nav-menu li").hide().delay(500).fadeIn(500);
         $(".close-menu").hide().delay(200).fadeIn(400);
     });
