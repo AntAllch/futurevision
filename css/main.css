@@ -96,14 +96,10 @@ header {
     -ms-flex-align: center;
     align-items: center;
     position: fixed;
-    opacity: 0;
-    visibility: hidden;
+    top: -600px;
     -webkit-transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
     -o-transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
-    transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
-    -webkit-transform: translateY(-600px);
-    -ms-transform: translateY(-600px);
-    transform: translateY(-600px); }
+    transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825); }
     header .mobile-nav-menu .close-menu {
       position: absolute;
       top: 25px;

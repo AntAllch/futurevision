@@ -92,7 +92,7 @@ header{
     }
 
     .mobile-nav-menu{
-        
+
         font-family: "Century Gothic";
         background: $medium-grey;
         outline: 2px solid $white;
@@ -103,10 +103,8 @@ header{
         justify-content: center;
         align-items: center;
         position: fixed;
-        opacity: 0;
-        visibility: hidden;
+        top: -600px;
         transition: all 0.5s cubic-bezier(0.890, 0.040, 0.190, 0.825);
-        transform: translateY(-600px);
 
         .close-menu{
             position: absolute;
