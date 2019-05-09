@@ -1,18 +1,18 @@
 $(document).ready(function(){
 
-    $(".hamburger").click(function(){
-        $(".mobile-nav-menu").css({"transform": "translateY(0px)", "opacity": "1"});
-        $(".mobile-nav-menu li").hide().delay(500).fadeIn(500);
-        $(".close-menu").hide().delay(200).fadeIn(400);
-    });
+    // $(".hamburger").click(function(){
+    //     $(".mobile-nav-menu").css({"transform": "translateY(0px)", "opacity": "1"});
+    //     $(".mobile-nav-menu li").hide().delay(500).fadeIn(500);
+    //     $(".close-menu").hide().delay(200).fadeIn(400);
+    // });
 
-    $(".close-menu").click(function(){
-        $(".mobile-nav-menu").delay(400).css("transform", "translateY(-600px)");
-    });
+    // $(".close-menu").click(function(){
+    //     $(".mobile-nav-menu").delay(400).css("transform", "translateY(-600px)");
+    // });
 
-    $(".mobile-nav-links li").click(function(){
-        $(".mobile-nav-menu").css("transform", "translateY(-600px)");
-    }); 
+    // $(".mobile-nav-links li").click(function(){
+    //     $(".mobile-nav-menu").css("transform", "translateY(-600px)");
+    // }); 
 
 
 
