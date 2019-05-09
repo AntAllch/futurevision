@@ -114,7 +114,7 @@ header {
         text-transform: uppercase; }
         header .mobile-nav-menu .mobile-nav-links li a {
           text-decoration: none;
-          color: red; }
+          color: #000000; }
           header .mobile-nav-menu .mobile-nav-links li a:visited {
             text-decoration: none; }
 
