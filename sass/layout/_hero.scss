@@ -1,8 +1,7 @@
 .hero{
     // display: none;
     background: $light-grey;
-    // background: orange;
-    width: 95%;
+    // background: orange;;
     margin: 0 auto;
     text-align: center;
     padding: 140px 0;
@@ -18,7 +17,7 @@
         width: 310px;
 
         @include respond(mobile){
-            margin-top: 200px;
+            margin-top: 250px;
         }
     }
 

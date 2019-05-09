@@ -1,23 +1,19 @@
 $(document).ready(function(){
 
-    $(".mobile-nav-menu").hide();
-
     $(".hamburger").click(function(){
-        $(".mobile-nav-menu").show();
-        $(".mobile-nav-menu li").hide().delay(200).fadeIn(400);
+        $(".mobile-nav-menu").css("transform", "translateY(10px)");
+        $(".mobile-nav-menu").css("transform", "translateY(0px)");
+        $(".mobile-nav-menu li").hide().delay(500).fadeIn(500);
         $(".close-menu").hide().delay(200).fadeIn(400);
-        $(".hamburger").hide();
-    });
-
-    $(".mobile-nav-links li").click(function(){
-        $(".mobile-nav-menu").hide();
-        $(".hamburger").show();
     });
 
     $(".close-menu").click(function(){
-        $(".mobile-nav-menu").hide();
-        $(".hamburger").show();
+        $(".mobile-nav-menu").delay(400).css("transform", "translateY(-600px)");
     });
+
+    $(".mobile-nav-links li").click(function(){
+        $(".mobile-nav-menu").css("transform", "translateY(-600px)");
+    }); 
 
 
 

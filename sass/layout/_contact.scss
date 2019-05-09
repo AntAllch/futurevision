@@ -22,10 +22,16 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 650px;
-        height: 750px;
+        width: 80%;
+        height: 95%;
         background: $white;
-        // border-radius: 5px;
+        // border-radius: 5px;  
+
+        #contact-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         //Change layout when it hits tablet size
         @include respond(tablet){
@@ -34,7 +40,7 @@
 
         //Change layout when it hits mobile size
         @include respond(mobile){
-            width: 350px;
+            width: 400px;
         }
 
 
@@ -103,6 +109,7 @@
 
                 @include respond(mobile){
                     width: 300px;
+                    
                 }
             }
 
@@ -117,7 +124,7 @@
                 background: $white;
                 color: $accent;
                 // border-color: $accent;
-                border: 1px solid $dark-grey;
+                border: 1px solid rgba(0,0,0,0.15);
                 font-size: 20px;
                 letter-spacing: 1px;
                 width: 220px;
@@ -132,6 +139,16 @@
                     color: $white;
                     cursor: pointer;
                 }
+                
+                @include respond(mobile){
+                    display: flex;
+                    margin-bottom: 10px;
+                    justify-content: center;
+                }
+            }
+
+            .clearsub{
+                margin: 0 auto;
             }
         }
     }

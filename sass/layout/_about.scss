@@ -6,6 +6,7 @@
     height: 500px;
     margin-bottom: 60px;
     font-family: "Century Gothic";
+    @include boxshadow;
 
     @include respond(tablet){
         display: grid;
