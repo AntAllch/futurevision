@@ -97,6 +97,7 @@ header {
     align-items: center;
     position: fixed;
     opacity: 0;
+    visibility: hidden;
     -webkit-transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
     -o-transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
     transition: all 0.5s cubic-bezier(0.89, 0.04, 0.19, 0.825);
@@ -117,7 +118,7 @@ header {
         text-transform: uppercase; }
         header .mobile-nav-menu .mobile-nav-links li a {
           text-decoration: none;
-          color: red; }
+          color: #000000; }
           header .mobile-nav-menu .mobile-nav-links li a:visited {
             text-decoration: none; }
 
