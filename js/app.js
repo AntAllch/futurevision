@@ -1,15 +1,18 @@
 $(document).ready(function(){
 
+    //Clicking Hamburger reveals mobile nav menu
     $(".hamburger").click(function(){
         $(".mobile-nav-menu").css("top", "0px");
         $(".mobile-nav-menu li").hide().delay(500).fadeIn(500);
         $(".close-menu").hide().delay(200).fadeIn(400);
     });
 
+    //Clicking "X" hides mobile nav menu
     $(".close-menu").click(function(){
         $(".mobile-nav-menu").delay(400).css("top", "-600px");
     });
 
+    //Clicking a nav link hides mobile nav menu
     $(".mobile-nav-links li").click(function(){
         $(".mobile-nav-menu").css("top", "-600px");
     }); 
