@@ -81,6 +81,12 @@
         background: $white;
         margin-bottom: 80px;
         cursor: pointer;
+        
+        &:hover{
+            border: 3px solid $accent;
+            background: $accent;
+            color: $white;
+        }
 
         @include respond(tablet){
             width:180px;

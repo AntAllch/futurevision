@@ -57,7 +57,10 @@ header {
           visibility: visible;
           -webkit-transform: scaleX(1);
           -ms-transform: scaleX(1);
-          transform: scaleX(1); }
+          transform: scaleX(1);
+          -webkit-transform-origin: right;
+          -ms-transform-origin: right;
+          transform-origin: right; }
   header .hamburger {
     position: absolute;
     top: 25px;
@@ -215,6 +218,10 @@ header {
     font-size: 2em;
     background: #ffffff;
     cursor: pointer; }
+    .summary .btn-moreinfo:hover {
+      border: 3px solid #00AAC5;
+      background: #00AAC5;
+      color: #ffffff; }
 
 .products {
   font-family: "Century Gothic"; }
@@ -385,6 +392,10 @@ header {
     font-size: 2em;
     background: #ffffff;
     cursor: pointer; }
+    .products .btn-appointment:hover {
+      border: 3px solid #00AAC5;
+      background: #00AAC5;
+      color: #ffffff; }
     @media screen and (max-width: 525px) {
       .products .btn-appointment {
         width: 200px;
@@ -546,6 +557,10 @@ header {
     background: #ffffff;
     margin-bottom: 80px;
     cursor: pointer; }
+    .test .btn-appointment:hover {
+      border: 3px solid #00AAC5;
+      background: #00AAC5;
+      color: #ffffff; }
     @media screen and (max-width: 800px) {
       .test .btn-appointment {
         width: 180px;

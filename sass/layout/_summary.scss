@@ -82,5 +82,11 @@
         font-size: 2em;
         background: $white;
         cursor: pointer;
+
+        &:hover{
+            border: 3px solid $accent;
+            background: $accent;
+            color: $white;
+        }
     }
 }

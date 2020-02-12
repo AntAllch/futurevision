@@ -50,6 +50,7 @@ header{
                     &:hover:before{
                         visibility: visible;
                         transform: scaleX(1);
+                        transform-origin: right;
                     }
                 }
 
